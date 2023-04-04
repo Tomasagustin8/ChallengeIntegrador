@@ -1,28 +1,41 @@
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Tienda/assets/assets.css" />
+    <link rel="stylesheet" href="/CSS/assets.css" />
     <title>Home | FunkoShop</title>
   </head>
   <body>
     <header>
       <!-- Inicio Header -->
-      <nav>
-        <picture>
-          <a href=""
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="./index.html"
             ><img
               src="Img/branding/logo_light_horizontal.svg"
               alt="Iso ogotipo de la marca Funkos"
           /></a>
         </picture>
-        <ul>
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">CONTACTO</a></li>
-          <li><a href="#">LOGIN</a></li>
-          <li>
-            <a href="#"
+        <ul class="navbar__menu">
+          <li class="navbar__item with-submenu" ><a class="navbar__link with-icon" href="./pages/shop/shop.html">SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon>
+</a>
+          <ul class="submenu">
+            <li class="submenu__item">
+             <a href=""class="submenu__link" >Funkos</a>    
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">LLaveros</a>
+            </li>
+          </ul></li>
+          <li class="navbar__item"><a class="navbar__link" href="/pages/contact.html">CONTACTO</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="/pages/admin/login.html">LOGIN</a></li>
+          <li class="navbar__item">
+            <a class="navbar__cart" href="/pages/cart.html"
               ><img src="/Img/icons/cart-icon.svg" alt="icono del carrito"
             /></a>
           </li>
@@ -30,7 +43,7 @@
       </nav>
     </header>
     <!-- Fin Header -->
-    <main>
+    <main class="container">
       <section class="hero">
         <article>
           <h3>Nuevos Ingresos</h3>
@@ -91,6 +104,7 @@ The Mandalorian </h3>
             <article>
               <a href="">
                 <picture>
+                  <h3>NUEVO</h3>
                 <img src="/Img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un STORMTROOPER de la saga de Star Wars">
                 </picture>
                 <div>
@@ -160,5 +174,6 @@ The Mandalorian </h3>
       <p class="copyright">
         All rights reserved 2022 - Funkoshop&copy</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
   </body>
 </html>
